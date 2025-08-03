@@ -42,7 +42,10 @@ def getInsurances():
             '_id': str(ObjectId(insurance['_id'])),
             'name': insurance['name'],
             'description': insurance['description'],
-            'benefits': insurance['benefits']
+            'insurance_type': insurance['insurance_type'],
+            'benefits': insurance['benefits'],
+            'value': insurance['value'],
+            'image': insurance['image']
         })
     return insurances
 
